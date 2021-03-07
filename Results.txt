@@ -1,0 +1,59 @@
+Single Self Attention + POS-FFN																	MSE: 33.40
+
+Single Self Attention + POS-FFN	+ 8 LayerS														MSE: 35.74
+
+Multi Head Self Attention 											Pearson: 0.8018677234649658	MSE: 0.36487212777137756
+
+Multi Head Attention + Residual + 2 layers 														MSE: 36.92
+	
+
+
+
+Ablation Study:
+--------------
+
+Single Head									Pearson: 0.8139443397521973	MSE: 0.3440428078174591
+
+Single Head layer norm						Pearson: 0.7314204573631287	MSE: 0.47377878427505493
+
+Single Head Residual 						Pearson: 0.834765613079071	MSE: 0.30878403782844543	0.2935
+
+Single Head layer norm + Residual 			Pearson: 0.8086977601051331	MSE: 0.3525039255619049
+
+
+
+Multi Head									
+
+Multi Head layer norm						
+
+Multi Head Residual 																			MSE: 0.2985			
+
+Multi Head layer norm + Residual 			
+
+
+just word 38.?? 
+
+branch 3 layer residual once outside								Pearson: 0.785434901714325	MSE: 0.3917973041534424
+
+branch 3 layer residual inside for loop residual changes			Pearson: 0.8161099553108215	MSE: 0.34093159437179565
+
+branch 3 layer same residual inside for loop						Pearson: 0.7884085774421692	MSE: 0.38679197430610657				
+
+Branch just Once BS = 16											Pearson: 0.852459192276001	MSE: 0.2806106209754944
+
+Branch just Once BS = 100
+
+Branch just Once BS = 50											Pearson: 0.8492401242256165	MSE: 0.28635960817337036
+
+Branch just Once BS = 30											Pearson: 0.843638002872467	MSE: 0.2968471646308899
+
+
+BS = 10																Pearson: 0.8441300392150879	MSE: 0.294497549533844
+
+BS = 19 															Pearson: 0.8302213549613953	MSE: 0.31805774569511414
+
+BS = 5																Pearson: 0.8483945727348328	MSE: 0.2853449583053589
+
+
+
+

@@ -1,0 +1,80 @@
+1543711062074	geckodriver	INFO	geckodriver 0.19.1
+1543711062076	geckodriver	INFO	Listening on 127.0.0.1:49761
+1543711063153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xZGBovcQoMqb"
+1543711063508	Marionette	DEBUG	Received observer notification profile-after-change
+1543711063569	Marionette	DEBUG	Received observer notification command-line-startup
+1543711063569	Marionette	DEBUG	Received observer notification nsPref:changed
+1543711063569	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1543711063725	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1543711064251	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1543711064251	Marionette	DEBUG	Waiting for delayed startup...
+1543711064404	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1543711064405	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1543711064406	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1543711064406	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1543711064406	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1543711064451	Marionette	INFO	Listening on port 39069
+1543711064451	Marionette	DEBUG	Remote service is active
+1543711064459	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:38636
+1543711064466	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1543711064467	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1543711193784	geckodriver	INFO	geckodriver 0.19.1
+1543711193787	geckodriver	INFO	Listening on 127.0.0.1:43011
+1543711193869	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.259MYb0zVjbE"
+1543711194242	Marionette	DEBUG	Received observer notification profile-after-change
+1543711194305	Marionette	DEBUG	Received observer notification command-line-startup
+1543711194305	Marionette	DEBUG	Received observer notification nsPref:changed
+1543711194305	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1543711194448	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1543711194999	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1543711195000	Marionette	DEBUG	Waiting for delayed startup...
+1543711195134	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1543711195134	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1543711195135	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1543711195135	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1543711195135	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1543711195164	Marionette	INFO	Listening on port 41555
+1543711195164	Marionette	DEBUG	Remote service is active
+1543711195174	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:37902
+1543711195176	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1543711195176	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1543711203526	geckodriver	INFO	geckodriver 0.19.1
+1543711203529	geckodriver	INFO	Listening on 127.0.0.1:47333
+1543711204598	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FWqTxcNil0FC"
+1543711204946	Marionette	DEBUG	Received observer notification profile-after-change
+1543711205010	Marionette	DEBUG	Received observer notification command-line-startup
+1543711205010	Marionette	DEBUG	Received observer notification nsPref:changed
+1543711205010	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1543711205161	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1543711205693	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1543711205693	Marionette	DEBUG	Waiting for delayed startup...
+1543711205803	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1543711205804	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1543711205804	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1543711205805	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1543711205805	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1543711205842	Marionette	INFO	Listening on port 42807
+1543711205842	Marionette	DEBUG	Remote service is active
+1543711205901	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:44432
+1543711205903	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1543711205903	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1543711226259	geckodriver	INFO	geckodriver 0.19.1
+1543711226262	geckodriver	INFO	Listening on 127.0.0.1:34355
+1543711227341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.nSUGj9ts3HTZ"
+1543711227703	Marionette	DEBUG	Received observer notification profile-after-change
+1543711227769	Marionette	DEBUG	Received observer notification command-line-startup
+1543711227769	Marionette	DEBUG	Received observer notification nsPref:changed
+1543711227769	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1543711227929	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1543711228569	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1543711228569	Marionette	DEBUG	Waiting for delayed startup...
+1543711228693	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1543711228693	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1543711228694	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1543711228695	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1543711228695	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1543711228734	Marionette	INFO	Listening on port 35173
+1543711228734	Marionette	DEBUG	Remote service is active
+1543711228749	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:36014
+1543711228751	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1543711228751	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]

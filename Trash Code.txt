@@ -1,0 +1,54 @@
+x = []
+for i in range(int(child_inputss.size(0))):
+    x.append(torch.matmul(child_inputss[i], self.V[i]))
+    x.append(self.demo(child_inputss[i]))
+x = torch.cat(x, dim = 0)
+child_inputs = x.view(-1,300)
+
+hs = torch.cat([parent_inputs, child_inputs], 0)
+
+m = []
+for i in range(int(child_inputs.size(0))):
+    m.append(self.Wm(hs[i]))
+m = torch.cat(m, dim = 0)
+m = m.view(-1,300)
+
+alpha = torch.matmul(hs,self.w.transpose(0,1)).transpose(0,1)
+alpha = torch.softmax(alpha, dim=1).squeeze(0)
+
+n = []
+for i in range(int(hs.size(0))):
+    n.append(hs[i] * alpha[i])
+
+n = torch.cat(n, dim = 0)
+n = n.view(-1,300)
+
+
+class Similarity(nn.Module):
+    def __init__(self, mem_dim, hidden_dim, num_classes):
+        super(Similarity, self).__init__()
+        self.mem_dim = mem_dim
+        self.hidden_dim = hidden_dim
+        self.num_classes = num_classes
+        self.wh = nn.Linear(1 * self.mem_dim, self.hidden_dim)
+        self.wp = nn.Linear(self.hidden_dim, self.num_classes)
+        
+        self.w_kp = torch.rand(5)
+        self.w_kp = nn.Parameter(self.w_kp/self.w_kp.sum())
+
+    def forward(self, lvec, rvec):
+        lvec = lvec
+        rvec = rvec
+        mult_dist = torch.mul(lvec, rvec)
+        abs_dist = torch.abs(torch.add(lvec, -rvec))
+        vec_dist = torch.cat((mult_dist, abs_dist), 1)
+        
+        features = [lvec,torch.abs(lvec - rvec), rvec, lvec * rvec, (lvec+rvec)/2] # 16x1500
+        outputs = [kappa * feature for feature,kappa in zip(features,self.w_kp)]
+        outputs = torch.cat(outputs, dim=0)
+        features = torch.sum(outputs, dim=0).view(1, 300)
+
+
+        out = F.sigmoid(self.wh(features))
+        out = F.log_softmax(self.wp(out), dim=1)
+        return out
